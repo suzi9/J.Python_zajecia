@@ -1,13 +1,16 @@
 def sum_seq(sekwencja):
     lista = []
     for x in sekwencja:
-        lista.append(sum(x))
+        if isinstance(x, (list, tuple)):
+            lista = lista + sum_seq(x)
+        else:
+            lista.append(x)
     
-    wynik = 0
-    for i in range(len(lista)):
-        wynik = wynik + lista[i]
+    return lista
+    
 
-    return wynik
+sekwencja = [1,(2,3),[],[4,(5,6,7)],8,[9]]
 
-sekwencja = [[], [4], (1,2), [3,4], (5,6,7)]
-print(sum_seq(sekwencja))
+lista_wynik = sum_seq(sekwencja)
+
+print(sum(lista_wynik))
