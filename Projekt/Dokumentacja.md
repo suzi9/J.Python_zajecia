@@ -12,13 +12,13 @@ Aby uruchomić program, wystarczy uruchomić plik baza_ksiazek.py będąc w gł�
   przemieszczania się pomiędzy różnymi funkcjami, którymi ta apliakcja udostępnia.
 
 - Pierwszą z góry opcją jest "Wyświetl baze książek". Ta opcja wyświetla użytkownikowi
-  całą bazę książek jaka istnieje. Dane wyświetlają się kolejno: 
-  **pozycja** - czyli liczby od 0 do n, gdzie n to dowolna liczba całkowita dodatnia
+  całą bazę książek jaka istnieje. Dane wyświetlają się kolejno: \
+  **pozycja** - czyli liczby od 0 do n, gdzie n to dowolna liczba całkowita dodatnia \
   **ID** - kolumna zawierająca wszytskie unikalne identyfikatory dla każdej 
-    książki z osobna w bazie danych
-  **Tytuł** - kolumna zawierająca tytuły wszystkich książek
-  **Autor** - kolumna zawierająca autorów wszystkich książek
-  **Rok** - kolumna zawierająca rok wydania każdej z książek
+    książki z osobna w bazie danych \
+  **Tytuł** - kolumna zawierająca tytuły wszystkich książek \
+  **Autor** - kolumna zawierająca autorów wszystkich książek \
+  **Rok** - kolumna zawierająca rok wydania każdej z książek \
   Warto wspomnieć iż jeżeli baza jest bardzo rozległa, istnieje możliwość 
   przesuwania(scrollowania) bazy danych w dół. Natomiast ostatni przycisk 
   "Powrót do strony głównej", przełącza użytkownika do Menu
@@ -56,7 +56,7 @@ Aby uruchomić program, wystarczy uruchomić plik baza_ksiazek.py będąc w gł�
   Czwarty przycisk "Powrót do strony głównej", przełącza użytkownika do Menu
   Głównego w celu podjęcia dodatkowych akcji.
 
-  - Czwartą opcją jest "Zamknij", która służy do zamknięcia aplikacji.
+- Czwartą opcją jest "Zamknij", która służy do zamknięcia aplikacji.
 
 ## Działanie programu - zwięzłe omówienie kodu
 
@@ -66,7 +66,7 @@ Pierwszą widoczną klasą w kodzie jest klasa o nazwie "Aplikacja".
 ```python
 class Aplikacja(tk.Tk):
 ```
-Zawiera ona konstruktor, który inizjalizuje nam powstanie obiektu Tk.
+Zawiera ona konstruktor, który inicjalizuje nam powstanie obiektu Tk.
 Czyli okienka z modułu Tkinter.
 ```python
 def __init__(self):
