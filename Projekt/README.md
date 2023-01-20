@@ -60,22 +60,22 @@ Aby uruchomić program, wystarczy uruchomić plik baza_ksiazek.py będąc w gł�
 
 ## Poprawnie wyświetlający się interfejs programu
 Menu główne
-<img src="./interfejs/1.png">
+<img src="1.png">
 
 OPCJA: Wyświetl bazę książek
-<img src="./interfejs/2.png">
+<img src="2.png">
 
 OPCJA: Dodaj nową książkę
-<img src="./interfejs/3.png">
+<img src="3.png">
 
 OPCJA: Usuń książkę
-<img src="./interfejs/4.png">
+<img src="4.png">
 
 OPCJA: Znajdź ksiązkę
-<img src="./interfejs/5.png">
+<img src="5.png">
 
 Po wyszukaniu według dowolnej opcji, pojawia się okienko ze znalezionymi książkami
-<img src="./interfejs/6.png">
+<img src="6.png">
 
 ## Działanie programu - zwięzłe omówienie kodu
 
