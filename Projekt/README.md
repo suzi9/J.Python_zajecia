@@ -56,7 +56,17 @@ Aby uruchomić program, wystarczy uruchomić plik baza_ksiazek.py będąc w gł�
   Czwarty przycisk "Powrót do strony głównej", przełącza użytkownika do Menu
   Głównego w celu podjęcia dodatkowych akcji.
 
-- Czwartą opcją jest "Zamknij", która służy do zamknięcia aplikacji.
+- Czwartą opcją jest "Znajdź książkę", która słuzy do przeszukiwania bazy danych
+  po identyfikatorze, tytule, autorze albo roku wydania w celu wyświetlenia znalezionych
+  książek po tych frazach. Co prawda mamy tam możliwość wyboru opcji a po wybraniu 
+  opcji, użytkownik wpisuje frazę do tej kategorii którą wybrał.
+  Jeżeli użytkownik wprowadzi dane które nie istnieją w bazie książek to zostanie o
+  tym powiadomiony przez pojawiający się komunikat. Ale to się dzieje dopiero po wciśnięciu
+  przycisku "Szukaj". Natiomiast jeżeli użytkownik wprowadzi poprawne dane to po wybraniu 
+  prycisku "Szukaj" wyświetli się nowe okienko ze znalezionymi książkami po danej frazie.
+  Mamy również przycisk "Wyczyść", które służy do wyczysczenia pola do wpisywania frazy.
+
+- Piątą opcją jest "Zamknij", która służy do zamknięcia aplikacji.
 
 ## Poprawnie wyświetlający się interfejs programu
 Menu główne
@@ -76,6 +86,15 @@ OPCJA: Znajdź ksiązkę
 
 Po wyszukaniu według dowolnej opcji, pojawia się okienko ze znalezionymi książkami
 <img src="6.png">
+
+## Co zrobić gdy interfejs nie wyświetla się poprawnie?
+
+Przy błędnym działaniu interfejsu proszę sprawdzić czy jako użytkownik posiada się
+najnowsze wersję Pandas i Pythona 3.
+Aktualizacje Pandas można wykonać za pomocą komendy:
+```
+pip install pandas --upgrade
+```
 
 ## Działanie programu - zwięzłe omówienie kodu
 
@@ -208,6 +227,26 @@ Ogólnie ma to służyć w przypadku niezdarności użytkownika, czyli przypadko
 wciśnięciem przycisku "Usuń". 
 A jeżeli użytkownik wprowadzi nieistniejące ID to również dostanie do tego 
 stosowny komunikat.
+
+---
+
+Szósta klasa o nazwie "Wyszukiwani", służy do szukania książek w zależności od
+wyboru. Wyborem może być szukanie po identyfikatorze, tytule, autorze lub po
+roku wydania.
+
+```python
+class Wyszukiwanie(tk.Frame):
+```
+Po wybraniu opcji według jakiej chcemy przeszukiwać bazę, wykonuje się funkcja:
+```python
+def szukanie_ksiazki(menu_z_opcja, wprowadz_fraze):
+```
+W środku tej funkcji wykonują się wszystkie operacje, które sprawdzają czy fraza
+została podana poprawnie oraz czy cos powiązanego z frazą istnieje w naszej
+bazie książek. Jeżeli tak to wyświetli nam się nowe okienko z ekstraktem
+z bazy, gdzie są wszystkie książki po tej frazie po której użytkownik 
+wyszukiwał. Jeżeli w bazie nic nie zostanie znalezione, to użytkownik
+dostanie do tego stosowny komunikat.
 
 ---
 
