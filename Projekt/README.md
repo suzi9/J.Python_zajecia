@@ -58,6 +58,25 @@ Aby uruchomić program, wystarczy uruchomić plik baza_ksiazek.py będąc w gł�
 
 - Czwartą opcją jest "Zamknij", która służy do zamknięcia aplikacji.
 
+## Poprawnie wyświetlający się interfejs programu
+Menu główne
+![image info](./interfejs/1.png)
+
+OPCJA: Wyświetl bazę książek
+![image info](./interfejs/2.png)
+
+OPCJA: Dodaj nową książkę
+![image info](./interfejs/3.png)
+
+OPCJA: Usuń książkę
+![image info](./interfejs/4.png)
+
+OPCJA: Znajdź ksiązkę
+![image info](./interfejs/5.png)
+
+Po wyszukaniu według dowolnej opcji, pojawia się okienko ze znalezionymi książkami
+![image info](./interfejs/6.png)
+
 ## Działanie programu - zwięzłe omówienie kodu
 
 Bazą przechowującą wszystkie dane w tym programie jest plik
