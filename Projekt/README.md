@@ -230,7 +230,7 @@ stosowny komunikat.
 
 ---
 
-Szósta klasa o nazwie "Wyszukiwani", służy do szukania książek w zależności od
+Szósta klasa o nazwie "Wyszukiwanie", służy do szukania książek w zależności od
 wyboru. Wyborem może być szukanie po identyfikatorze, tytule, autorze lub po
 roku wydania.
 
