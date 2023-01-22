@@ -482,8 +482,9 @@ class Wyszukiwanie(tk.Frame):
                     "\nSprawdź poprawność wprowadzonych danych i spróbuj "
                     "ponownie!")
             
-        def wyczysc_dane(wprowadz_fraze):
+        def wyczysc_dane(wprowadz_fraze, menu_z_opcja):
             wprowadz_fraze.delete(0, tk.END)
+            menu_z_opcja.delete(0, tk.END)
         
         # Aby móc dodać dwa przyciski obok siebie tworzę nowy Frame w tym 
         # samym okienku i 
@@ -502,7 +503,7 @@ class Wyszukiwanie(tk.Frame):
 
         tk.Button(self,bg="#D3D3D3", text="Wyczyść",fg="#4700ff",
                 cursor="hand2", width=20, height=3 ,font= "Times 10 bold" , 
-                command=lambda:wyczysc_dane(wprowadz_fraze)).pack(
+                command=lambda:wyczysc_dane(wprowadz_fraze, menu_z_opcja)).pack(
                     side=tk.RIGHT, in_=top)
 
 
